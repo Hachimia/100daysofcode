@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.errorAlert{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+
+
