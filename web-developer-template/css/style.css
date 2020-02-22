@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro&display=swap');
+
+/*-----------------------
+        LAYOUT
+-------------------------*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Cantarell', sans-serif;
+    color: #181a21;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4rem;
+    color: #1E527E;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+input, textarea{
+    font-size: 1.6rem !important;
+    border-radius: 3rem !important;
+}
+
+label{
+    color: #9EBBDA;
+    font-weight: bold;
+}
+
+.content{
+    margin-bottom: 3rem;
+}
+
+.btn-round{
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    border: 0;
+    width: 15rem;
+    background: linear-gradient(100deg,#326969,#9CB493);
+
+}
+/*-----------------------
+        WELCOME PAGE
+-------------------------*/
+
+#top-menu{
+    background-color: #1E527E;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+#top-menu a{
+    color: white;
+}
+
+#logo{
+    font-size: 3rem;
+    margin-right: 5rem;
+}
+
+#top-menu a:hover{
+    color: #9EBBDA;
+}
+
+#burger{
+    color: #9EBBDA;
+}
+
+#first-hero-header{
+    background: url('../img/coding.jpg');
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#hero-header-legend{
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px black;
+    position: relative;
+    padding: 20rem;
+}
+
+.portfolio-card{
+    width: 30rem;
+}
+
+footer{
+    background-color: #9CB493;
+    color: white;
+    padding: .5rem;
+}
+
+footer p{
+    padding: 1rem;
+}
