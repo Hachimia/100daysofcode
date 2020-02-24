@@ -30,6 +30,8 @@ h2{
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
     text-transform: uppercase;
+    color: #9CB493;
+    font-weight: bold;
 }
 
 input, textarea{
@@ -57,9 +59,61 @@ label{
 }
 
 .spacings{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
+
+.space-icons{
+    margin-left: 5.3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+/*-----------------------
+        MEDIA QUERIES
+-------------------------*/
+
+@media (min-width: 768px)and (max-width:1999px) {
+    .space-icons{
+        margin-left: 1.8rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width:540px)and (max-width:767px) {
+    .space-icons{
+        margin-left: 15rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 450px)and (max-width:539px) {
+        .space-icons{
+            margin-left: 12rem;
+            margin-bottom: 2.5rem;
+            margin-top: 2.5rem;
+        }
+}
+
+@media (min-width: 425px)and (max-width:449px) {
+    .space-icons{
+        margin-left: 9rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 150px)and (max-width:424px) {
+    .space-icons{
+        margin-left: 0rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+
 /*-----------------------
         WELCOME PAGE
 -------------------------*/
