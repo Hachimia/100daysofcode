@@ -55,6 +55,11 @@ label{
     background: linear-gradient(100deg,#326969,#9CB493);
 
 }
+
+.spacings{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 /*-----------------------
         WELCOME PAGE
 -------------------------*/
@@ -100,6 +105,16 @@ label{
 
 .portfolio-card{
     width: 30rem;
+}
+
+.testimony-author{
+    color: #9CB493;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fa-quote-left, .fa-quote-right{
+    color: #326969;
 }
 
 footer{
