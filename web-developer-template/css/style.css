@@ -163,6 +163,7 @@ a:hover{
     text-shadow: 2px 2px 2px black;
     position: relative;
     padding: 20rem;
+    overflow:hidden;
 }
 
 @media (min-width:541px)and (max-width:780px) {
@@ -181,14 +182,33 @@ a:hover{
         font-size: 4rem;
         text-shadow: 2px 2px 2px black;
         position: relative;
-        padding-top: 10rem;
-        margin-left: -7rem;
+        padding-top: 15rem;
+        margin-left: -12rem;
+    }
+    
+}
+
+@media (min-width:450px)and (max-width:509px) {
+    #hero-header-legend{
+        color: white;
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px black;
+        position: relative;
+        padding-top: 11rem;
+        margin-left: -5rem;
     }
 }
 
-@media (min-width:150px) and (max-width:509px) {
+
+
+@media (min-width:320px)and (max-width:449px) {
     #hero-header-legend{
-        display:none;
+        color: white;
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px black;
+        position: relative;
+        padding-top: 13rem;
+        margin-left: -11rem;
     }
 }
 
