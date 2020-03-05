@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <title>Designer Template</title>
 </head>
 <body>
-    <h1>Designer Template</h1>
+    <nav>
+        <div class="toggle"><i class="fas fa-ellipsis-v menu-button" aria-hidden="true"></i></div>
+        <ul id="top-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-button').click(function(){
+            $('#top-menu').toggleClass('active');
+        })
+    })
+  </script>
 </body>
 </html>

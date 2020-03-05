@@ -1,0 +1,76 @@
+/*----------------
+        BASE
+------------------*/
+@import url("https://fonts.googleapis.com/css?family=Ovo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: 'Muli', sans-serif;
+}
+
+/*----------------
+    NAVIGATION
+------------------*/
+nav {
+  width: 100%;
+  background: #1a1915;
+}
+
+#top-menu {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Ovo', serif;
+}
+
+#top-menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 2rem;
+}
+
+#top-menu li:hover {
+  background: #fbc9d4;
+  color: #1a1915;
+}
+
+#top-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.toggle {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: grey;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 2.5rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+  #top-menu {
+    width: 100%;
+    display: none;
+  }
+  #top-menu li {
+    display: block;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
