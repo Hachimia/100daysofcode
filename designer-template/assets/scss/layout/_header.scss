@@ -4,25 +4,34 @@
 
 nav{
     width: 100%;
-    background: #1a1915;
+    background: $dark-color;
+}
+
+.logo{
+    float: left;
+    font-size: 3rem;
+    color: $pink-candy;
+    line-height: 6rem;
+    padding: 0 6rem;
 }
 
 #top-menu{
     width: 80%;
     margin: 0 auto;
     padding: 0;
-    font-family: 'Ovo', serif;
+    font-family: 'Muli', sans-serif;
 }
 
 #top-menu li{
     list-style: none;
     display: inline-block;
     padding: 2rem;
+    text-transform: uppercase;
 }
 
 #top-menu li:hover{
-    background: #fbc9d4;
-    color: #1a1915;
+    background: $pink-candy;
+    color: $dark-color;
 }
 
 #top-menu a{
@@ -33,7 +42,7 @@ nav{
 .toggle{
     width: 100%;
     padding: 1rem 2rem;
-    background: grey;
+    background: $dark-color;
     text-align: right;
     box-sizing: border-box;
     color: white;
@@ -56,9 +65,13 @@ nav{
         text-align: center;
     }
 
-    .active{
+    #top-menu.active{
         display: block;
-    }    
+    }
+    
+    .menu-button{
+        cursor: pointer;
+    }
 }
 
 

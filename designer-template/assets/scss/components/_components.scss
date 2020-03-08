@@ -1,0 +1,23 @@
+/*----------------
+    BUTTONS
+------------------*/ 
+
+.transparent-button{
+    border: 2px solid white;
+    padding: 1.5rem;
+    width: 15rem;
+    border-radius: 3rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+}
+
+.transparent-button:hover{
+    color: $mole;
+    text-decoration: none;
+    background: white;
+    border: 2px solid $mole;
+}
+
