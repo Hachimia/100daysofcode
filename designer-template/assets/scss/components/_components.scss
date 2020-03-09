@@ -21,3 +21,16 @@
     border: 2px solid $mole;
 }
 
+.gradient-button{
+    border: 0;
+    padding: 1.5rem;
+    width: 15rem;
+    background: linear-gradient(125deg, $pink-peach, $yellow);
+    color: white;
+    text-align: center;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+}
+
