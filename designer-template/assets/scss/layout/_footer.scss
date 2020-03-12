@@ -1,0 +1,22 @@
+/*----------------
+    FOOTER
+------------------*/ 
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+footer a{
+    color: $pink-peach;
+}
+
+footer a:hover{
+    color: $mole;
+    text-decoration: none;
+}
+
+.fa-heart{
+    color: red;
+}
