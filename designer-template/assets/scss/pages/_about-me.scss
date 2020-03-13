@@ -1,0 +1,22 @@
+/*----------------
+    ABOUT PAGE
+------------------*/ 
+
+#about-hero-header{
+    background: url('../img/about-me.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+    background-attachment: fixed;
+    height: 50rem;
+    width: 100%;
+}
+
+#school-career{
+    background-color: $dark-color;
+    color: white;
+}
+
+.years{
+    font-size: 3rem;
+    color: $pink-peach;
+}
