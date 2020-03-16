@@ -27,6 +27,28 @@ h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+label, input{
+    font-size: 1.6rem !important;
+}
+
+label{
+    color: $orange !important;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 3rem !important;
+}
+
+textarea{
+    border-radius: 2rem !important;
+}
+
+::placeholder{
+    color: $yellow !important;
+    font-style: italic;
+}
+
 .spacings{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
