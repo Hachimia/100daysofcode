@@ -7,7 +7,21 @@
     background-size: cover;
     background-position: 50% 80%;
     background-attachment: fixed;
-    height: 50rem;
+    height: 45rem;
     width: 100%;
     opacity: 0.7;
+}
+
+#logos-section{
+    padding-bottom: 2rem;
+}
+
+#company-brochures{
+    background: $dark-color;
+    padding-top:1rem;
+    padding-bottom: 2rem;
+}
+
+#websites-mockup{
+    padding-bottom: 2rem;
 }

@@ -41,3 +41,31 @@
     text-decoration: none;
 }
 
+/*----------------
+     FORMS
+------------------*/ 
+
+label, input{
+    font-size: 1.6rem !important;
+}
+
+label{
+    color: $orange !important;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 3rem !important;
+}
+
+textarea{
+    border-radius: 2rem !important;
+}
+
+::placeholder{
+    color: $yellow !important;
+    font-style: italic;
+}
+
+
+

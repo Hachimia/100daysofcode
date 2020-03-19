@@ -31,7 +31,7 @@ nav{
     text-transform: uppercase;
 }
 
-#top-menu li:hover{
+#top-menu li:hover, #top-menu li.active:hover{
     background: $pink-candy;
     color: $dark-color;
 }
