@@ -8,6 +8,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/scss/main.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Designer Template | Services</title>
 </head>
 
@@ -27,7 +28,7 @@
 
     <!-- HERO HEADER -->
     <div class="container-fluid" id="services-hero-header">
-        <p class="hero-header-legend">Services</p>
+        <p class="hero-header-legend animated fadeIn">Services</p>
     </div>
 
     <!-- VISUAL IDENTITY -->
@@ -35,10 +36,12 @@
     <section id="visual-identity">
         <div class="container">
             <h1 class="text-center">Visual identity</h1>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="col-md-6" >
                     <h2 class="text-center">Logo creation</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste asperiores, debitis sed at itaque modi illo sunt soluta quisquam cum tempore aspernatur vero laborum consequuntur quo officiis necessitatibus mollitia odit!</p>
+                    <p class="text-justfy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste asperiores, debitis sed at itaque modi illo sunt soluta quisquam cum tempore aspernatur vero laborum consequuntur quo officiis necessitatibus mollitia odit!</p>
                 </div>
                 <div class="col-md-6">
                     <h2 class="text-center">Graphical charter</h2>
@@ -53,7 +56,9 @@
     <section id="packaging">
         <div class="container">
             <h1 class="text-center">Packaging</h1>
-        <div class="row">
+        <div class="row" data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div class="col-md-6">
                 <h2 class="text-center">Company brochures</h2>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, voluptatibus. Amet quas qui nisi quae sunt reiciendis in quos rerum aliquam corrupti laborum voluptate quia, laudantium necessitatibus repudiandae consequatur vitae.</p>
@@ -73,7 +78,7 @@
     <section id="webdesign">
         <div class="container">
             <h1 class="text-center">Webdesign</h1>
-            <div class="row">
+            <div class="row" data-aos="fade-zoom-in"  data-aos-duration="2000">
                 <div class="col-md-12">
                     <h2 class="text-center">Websites mockup</h2>
                         <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ullam alias, quasi expedita eius aliquam, architecto aliquid itaque perferendis, soluta autem? Placeat, provident? Quia tempora dignissimos expedita quos aliquam et quam modi natus dolor commodi, accusantium unde repudiandae recusandae dolore deleniti maiores hic itaque quibusdam facere. Alias, voluptate! Ea eum vero totam animi velit suscipit quod atque non omnis amet, error iure facere est? Quam culpa velit dignissimos? Ex, nihil. Doloribus impedit blanditiis itaque neque.</p>
@@ -98,6 +103,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>     
+    <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
 </body>

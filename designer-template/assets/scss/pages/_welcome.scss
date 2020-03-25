@@ -36,3 +36,16 @@
 #price-request{
     background: $pink-candy;
 }
+
+@media (min-width: 450px) and (max-width: 924px){
+    .hero-header-legend{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 450px){
+    .hero-header-legend{
+        font-size: 2rem;
+        padding-top: 15rem;
+    }
+}

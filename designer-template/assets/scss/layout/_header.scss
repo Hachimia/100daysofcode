@@ -31,7 +31,7 @@ nav{
     text-transform: uppercase;
 }
 
-#top-menu li:hover, #top-menu li.active:hover{
+#top-menu li:hover{
     background: $pink-candy;
     color: $dark-color;
 }
@@ -76,60 +76,18 @@ nav{
     }
 }
 
-@media (min-width: 890px) and (max-width: 924px){
-    #top-menu{
-        width: 104%;
-    }
-}
-
-@media (min-width: 881px) and (max-width: 889px){
-    #top-menu{
-        width: 105%;
-    }
-}
-
-
-@media (min-width: 873px) and (max-width: 880px){
-    #top-menu{
-        width: 106%;
-    }
-}
-
-@media (min-width: 865px) and (max-width: 872px){
-    #top-menu{
-        width: 107%;
-    }
-}
-
-@media (min-width: 849px) and (max-width: 864px){
-    #top-menu{
-        width: 109%;
-    }
-}
-
-@media (min-width: 834px) and (max-width: 848px){
-    #top-menu{
-        width: 111%;
-    }
-}
-
-@media (min-width: 379px) and (max-width: 398px){
-   .logo{
-       padding: 0 5rem;
-   }
-}
-
-@media (min-width: 359px) and (max-width: 378px){
-    .logo{
-        padding: 0 4rem;
-    }
+ @media (min-width: 450px) and (max-width: 924px){
+     .logo{
+         font-size: 2.5rem;
+     }
  }
 
- @media (min-width: 350px) and (max-width: 358px){
+ @media (min-width: 250px) and (max-width: 449px){
     .logo{
-        padding: 0 3rem;
+        font-size: 2rem;
+        padding: 0 4.5rem;
     }
- }
+}
 
 
 

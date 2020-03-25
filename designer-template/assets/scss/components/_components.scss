@@ -56,10 +56,12 @@ label{
 
 input{
     border-radius: 3rem !important;
+    border: 1px solid $pink-peach !important;
 }
 
 textarea{
     border-radius: 2rem !important;
+    border: 1px solid $pink-peach !important;
 }
 
 ::placeholder{
@@ -67,5 +69,12 @@ textarea{
     font-style: italic;
 }
 
+@media (min-width: 250px) and (max-width: 924px){
+    .transparent-button, .gradient-button{
+       padding: 1.3rem;
+       width: 17rem;
+    }
+
+} 
 
 

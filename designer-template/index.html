@@ -8,6 +8,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/scss/main.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Designer Template | Welcome </title>
 </head>
 
@@ -27,14 +28,15 @@
 
     <!-- HERO HEADER -->
     <div class="container-fluid" id="welcome-hero-header">
-        <p class="hero-header-legend">I'm designer and I'm creating visuals !</p>
+        <p class="hero-header-legend animated fadeIn">I'm designer and I'm creating visuals !</p>
         <a href="portfolio.html" class="transparent-button">See more</a>
     </div>
 
     <!-- PRESENTATION -->
-    <div class="container-fluid spacings" id="presentation">
+    <section id="presentation">
+    <div class="container-fluid spacings">
         <div class="container text-presentation">
-            <div class="text-center">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="assets/img/designer.svg" class="img-fluid" alt="designer">
             </div>
             <h1 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
@@ -46,15 +48,17 @@
             <a href="about-me.html" class="gradient-button">About me</a>
         </div>
     </div>
+    </section>
 
     <!-- SERVICES -->
 
+    <section>
     <div class="container spacings">
         <h1 class="text-center">Services</h1>
         <div class="row">
             <div class="col-md-4 text-center">
                 <h2>Visual idendity</h2>
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-right" data-aos-duration="2000">
                     <img src="assets/img/color-palette.svg" class="img-fluid" alt="color-palette">
                 </div>
                 <div>
@@ -64,7 +68,7 @@
             </div>
             <div class="col-md-4 text-center">
                 <h2>Packaging</h2>
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-down" data-aos-duration="2000">
                     <img src="assets/img/box.svg" class="img-fluid" alt="box">
                 </div>
                 <div>
@@ -74,7 +78,7 @@
             </div>
             <div class="col-md-4 text-center">
                 <h2>Webdesign</h2>
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-left" data-aos-duration="2000">
                     <img src="assets/img/graphic-design.svg" class="img-fluid" alt="graphic-design">
                 </div>
                 <div>
@@ -85,9 +89,11 @@
         </div>
         <a href="portfolio.html" class="gradient-button">Discover my work</a>
     </div>
+    </section>
 
     <!-- PRICE REQUEST -->
 
+    <section>
     <div class="container-fluid spacings" id="price-request">
         <h1 class="text-center">Price Request</h1>
         <div class="text-center">
@@ -97,6 +103,7 @@
             suscipit tenetur a quae adipisci doloremque, accusantium rem assumenda!</p>
         <a href="contact.html" class="transparent-button">Ask for a price</a>
     </div>
+    </section>
 
     <!-- FOOTER -->
 
@@ -114,7 +121,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
 </body>
 

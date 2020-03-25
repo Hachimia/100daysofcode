@@ -8,6 +8,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/scss/main.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Designer Template | Contact</title>
 </head>
 
@@ -27,14 +28,16 @@
 
     <!-- HERO HEADER -->
     <div class="container-fluid" id="contact-hero-header">
-        <p class="hero-header-legend">Contact</p>
+        <p class="hero-header-legend animated fadeIn">Contact</p>
     </div>
 
     <!-- CONTACT FORM-->
     <div class="container">
-        <h1 class="text-center">You have a question? Would you like to receive a quote?</h1>
-        <h2 class="text-center">Fill the form below : </h2>
-        <form action="">
+        <h1 class="text-center" data-aos="zoom-in" data-aos-duration="1500">You have a question? Would you like to receive a quote?</h1>
+        <h2 class="text-center" data-aos="zoom-in" data-aos-duration="1500">Fill the form below : </h2>
+        <form data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <div class="form-group">
                 <label for="lastname">Last name</label>
                 <input type="text" class="form-control" placeholder="Enter your last name">
@@ -55,7 +58,7 @@
                 <label for="message">Message</label>
                 <textarea name="message"  class="form-control" id="message" cols="30" rows="10"></textarea>
             </div>
-            <button class="gradient-button mb-4" type="submit">Submit</button>
+            <button class="gradient-button mb-4" type="submit" id="submit">Submit</button>
         </form>
     </div>
 
@@ -75,6 +78,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
 </body>
