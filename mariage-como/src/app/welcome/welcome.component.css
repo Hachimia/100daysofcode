@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script&display=swap');
+
+h1{
+    font-family: 'Rouge Script', cursive;
+    text-align: center;
+    color: #40384B;
+}
+
+input{
+    border-radius: 2rem !important;
+}
+
+label{
+    color: grey !important;
+}
+
+a{
+    color: #40384B;
+}
+
+.button-style{
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: 0;
+}
+
+.button-style:hover{
+    background-color: white;
+    color: grey;
+}
