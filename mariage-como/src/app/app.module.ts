@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     UsersComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

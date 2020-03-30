@@ -1,6 +1,6 @@
-<h1>Bienvenue sur Mariage-Como</h1>
-
+<div class="main">
 <div class="container">
+  <h1 class="text-center">Connexion</h1>
   <form>
     <div class="form-group">
       <label for="email">E-mail</label>
@@ -12,18 +12,10 @@
       <input class="form-control" type="password">
     </div>
 
-    <button class="btn  btn-primary button-style">Connexion</button>
-
-    <div class="row">
-      <div class="col-md-12">
-        <p class="text-center">
-          <a href="#">Pas encore inscrit(e) ? Cliquez-ici</a>
-        </p>
-      </div>
-    </div>
+    <button class="btn button-style"><a href="dashboard">Connexion</a></button>
   </form>
 
-  <div id="footer">
-    <p class="text-center">Made by <a href="https://hachimia-msa.fr">Hachimia M'SA</a></p>
-  </div>
 </div>
+</div>
+
+<router-outlet></router-outlet>

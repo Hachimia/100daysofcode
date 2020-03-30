@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
+
+h1{
+    font-family: 'PT Sans', sans-serif;
+    color: #6E604C;
+}
+
+p{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
 .category{
-    border: 1px solid grey;
-    padding: 1rem;
+    border: 0;
+    background-color: #C7B48E;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+.category:hover{
+    background-color: white;
+    color: #C7B48E;
+    border: 2px solid #C7B48E;
+}
+
+.icon-size{
+    font-size: 2.5rem;
 }

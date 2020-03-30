@@ -1,7 +1,40 @@
-.main{
-    background: url('../assets/img/maries.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+
+
+#top-menu{  
+    background-color: #372F3B !important;
 }
 
+#top-menu a{
+    color: #F3D4B2;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#top-menu a:hover{
+    color:white;
+}
+
+.logo-menu{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3rem !important;
+}
+
+#space-connection{
+    background-color: #F7EDE0;
+    color: #372F3B;
+    font-family: 'Alegreya', serif;
+}
+
+#space-connection a{
+    color: #372F3B;
+}
+
+#space-connection a:hover{
+    color: #E7B885;
+    text-decoration: none;
+}
