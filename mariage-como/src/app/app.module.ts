@@ -8,6 +8,11 @@ import { UsersComponent } from './users/users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RegistrationComponent } from './registration/registration.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { ProvidersComponent } from './providers/providers.component';
+import { MessagesComponent } from './messages/messages.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { RegistrationComponent } from './registration/registration.component';
     WelcomeComponent,
     UsersComponent,
     DashboardComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    CalendarComponent,
+    ProvidersComponent,
+    MessagesComponent,
+    BlogComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

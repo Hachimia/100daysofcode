@@ -5,41 +5,61 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 category">
-            <div class="text-center icon-size"><fa-icon [icon]="faCalendarAlt"></fa-icon></div>
-            <p class="text-center">Planifier les évènements</p>
+            <a routerLink="/calendar">
+                <div class="text-center icon-size">
+                    <fa-icon [icon]="faCalendarAlt"></fa-icon>
+                </div>
+                <p class="text-center">Planifier les évènements</p>
+            </a>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 category">
-            <div class="text-center icon-size"><fa-icon [icon]="faSearch"></fa-icon></div>
-            <p class="text-center">Chercher un prestataire</p>
+            <a routerLink="/providers">
+                <div class="text-center icon-size">
+                    <fa-icon [icon]="faSearch"></fa-icon>
+                </div>
+                <p class="text-center">Chercher un prestataire</p>
+            </a>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 category">
-            <div class="text-center icon-size"><fa-icon [icon]="faEnvelope"></fa-icon></div>
-            <p class="text-center">
-            Accéder à la messagerie
-            </p>
+            <a routerLink="/messages">
+                <div class="text-center icon-size">
+                    <fa-icon [icon]="faEnvelope"></fa-icon>
+                </div>
+                <p class="text-center">
+                    Accéder à la messagerie
+                </p>
+            </a>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 category">
-            <div class="text-center icon-size"><fa-icon [icon]="faBlog"></fa-icon></div>
-            <p class="text-center">
-                Visiter le blog
-            </p>
+            <a routerLink="/blog">
+                <div class="text-center icon-size">
+                    <fa-icon [icon]="faBlog"></fa-icon>
+                </div>
+                <p class="text-center">
+                    Visiter le blog
+                </p>
+            </a>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 category">
-            <div class="text-center icon-size"><fa-icon [icon]="faUserEdit"></fa-icon></div>
-            <p class="text-center">Informations personnelles</p>
+            <a routerLink="/profile">
+                <div class="text-center icon-size">
+                    <fa-icon [icon]="faUserEdit"></fa-icon>
+                </div>
+                <p class="text-center">Informations personnelles</p>
+            </a>
         </div>
-    </div>     
+    </div>
 
 </div>

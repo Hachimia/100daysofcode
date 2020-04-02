@@ -29,8 +29,16 @@ p{
 
 .category:hover{
     background-color: white;
-    color: #C7B48E;
     border: 2px solid #C7B48E;
+}
+
+.category a {
+    color: white;
+}
+
+.category a:hover{
+    color: #C7B48E;
+    text-decoration: none;
 }
 
 .icon-size{
