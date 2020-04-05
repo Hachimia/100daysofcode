@@ -1,1 +1,23 @@
-<p>calendar works!</p>
+<div class="container">
+
+<h1 class="text-center">Organisation du mariage de {{ bride.value }} et {{groom.value}} </h1>
+
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="form-group">
+        <label for="bride">Nom et prénom de "Bibi Haroussi" (la mariée)</label>
+        <input name="bride" ngModel required #bride="ngModel" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="groom">Nom et prénom de "Bwana Haroussi"(le marié)</label>
+        <input name="groom" ngModel required #groom="ngModel" type="text" class="form-control">
+    </div>
+
+    <button class="button-style">Valider</button>
+</form>
+
+    
+
+
+</div>
