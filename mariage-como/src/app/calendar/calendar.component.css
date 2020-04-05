@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
 
 h1{
     font-family: 'PT Sans', sans-serif;
@@ -12,8 +13,7 @@ p{
 
 label{
     color: #40384B !important;
-    text-shadow: 1px 1px 2px #F3D4B2 !important;
-    font-family: 'Alegreya', serif;
+    font-family: 'Martel', serif;
 }
 
 input{
@@ -27,10 +27,11 @@ input{
     width: 10rem;
     border-radius: 2rem;
     border: 0;
-    font-family: 'Alegreya', serif;
+    font-family: 'Martel', serif;
     margin-right: 1rem;
 }
 
 .button-style:hover{
     background-color: #40384B;
+    color: #F3D4B2;
 }

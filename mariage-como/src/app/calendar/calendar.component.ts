@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import {Event} from '../event';
 
 @Component({
   selector: 'app-calendar',
@@ -12,10 +13,15 @@ export class CalendarComponent implements OnInit {
     console.log(f.value);  // { first: '', last: '' }
   }
 
+  name: string;
+  date: Date;
+  listEvent: Array<Event> = [];
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+    
+ 
 }
 
