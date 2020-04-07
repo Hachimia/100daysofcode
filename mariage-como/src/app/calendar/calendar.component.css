@@ -35,3 +35,8 @@ input{
     background-color: #40384B;
     color: #F3D4B2;
 }
+
+.event-list{
+    border: 2px solid #6E604C;
+    border-radius: 3rem;
+}
