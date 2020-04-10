@@ -1,45 +1,42 @@
 <div class="main">
-<div class="container">
+    <div class="container">
 
-<h1 class="text-center">Organisation du mariage de {{ bride.value }} et {{groom.value}} </h1>
+        <h1 class="text-center">Organisation du mariage de {{ bride.value }} et {{groom.value}} </h1>
 
 
-<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-    <div class="form-group">
-        <label for="bride">Nom et prénom de "Bibi Haroussi" (la mariée)</label>
-        <input name="bride" ngModel required #bride="ngModel" type="text" class="form-control">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <div class="form-group">
+                <label for="bride">Nom et prénom de "Bibi Haroussi" (la mariée)</label>
+                <input name="bride" ngModel required #bride="ngModel" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="groom">Nom et prénom de "Bwana Haroussi"(le marié)</label>
+                <input name="groom" ngModel required #groom="ngModel" type="text" class="form-control">
+            </div>
+
+            <button class="button-style">Valider</button>
+        </form>
+
+        <h1 class="text-center">Planning</h1>
+
+        <form #e="ngForm" (ngSubmit)="onAdd(e)">
+            <div class="form-group">
+                <label for="event">Ajouter un évènement</label>
+                <input type="text" class="form-control" name="event" ngModel #event="ngModel">
+
+                <label for="date">Saisir une date</label>
+                <input type="date" class="form-control" name="date" ngModel #date="ngModel">
+            </div>
+
+            <button type="submit" class="button-style">Ajouter</button>
+        </form>
+
+        <h1 class="text-center">Déroulé des événements</h1>
+
+        <div id="eventList">
+                
+        </div>
+
     </div>
-
-    <div class="form-group">
-        <label for="groom">Nom et prénom de "Bwana Haroussi"(le marié)</label>
-        <input name="groom" ngModel required #groom="ngModel" type="text" class="form-control">
-    </div>
-
-    <button class="button-style">Valider</button>
-</form>
-
-<h1 class="text-center">Planning</h1>
-
-<form>
-    <div class="form-group">
-        <label for="event">Ajouter un évènement</label>
-        <input type="text" class="form-control" name="event">
-    </div>
-
-    <div class="form-group">
-        <label for="date">Saisir la date</label>
-        <input type="date" class="form-control" name="date">
-    </div>
-  
-
-    <button class="button-style">Ajouter</button>
-</form>
-
-<h1 class="text-center">Déroulé des événements</h1>
-
-<div class="event-list">
-
-</div>
-
-</div>
 </div>

@@ -1,24 +1,26 @@
 <div class="container-fluid main">
-    <h2 class="text-center">Organiser votre mariage avec les meilleurs prestataires</h2>
-    
-    <div class="row">
-         <div class="col-md-12">
-             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Rechercer un prestataire" id="search-provider">
-                <button class="btn btn-primary" id="button-search"><fa-icon [icon]="faSearch"></fa-icon></button>
-             </div>
-         </div>
-         </div>
+  <h2 class="text-center">Organiser votre mariage avec les meilleurs prestataires</h2>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Rechercer un prestataire" id="search-provider">
+        <button class="btn btn-primary" id="button-search">
+          <fa-icon [icon]="faSearch"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container" *ngFor="let provider of providers">
-          <div class="card mt-4">
-            <div class="card-body">
-              <h5 class="card-title">{{ provider.category }}</h5>
-              <p class="card-text"> {{ provider.name }}</p>
-              <p class="card-text"> {{ provider.email }}</p>
-              <p class="card-text"> {{ provider.phone }}</p>
-              <a href="#" class="btn button-style">En savoir plus</a>
-            </div>
-          </div>
-        </div>
+  <div class="card mt-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ provider.category }}</h5>
+      <p class="card-text"> {{ provider.name }}</p>
+      <p class="card-text"> {{ provider.email }}</p>
+      <p class="card-text"> {{ provider.phone }}</p>
+      <a href="#" class="btn button-style">En savoir plus</a>
+    </div>
+  </div>
+</div>
