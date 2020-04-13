@@ -5,14 +5,19 @@
 
 
         <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
             <div class="form-group">
+
                 <label for="bride">Nom et prénom de "Bibi Haroussi" (la mariée)</label>
                 <input name="bride" ngModel required #bride="ngModel" type="text" class="form-control">
+
             </div>
 
             <div class="form-group">
+
                 <label for="groom">Nom et prénom de "Bwana Haroussi"(le marié)</label>
                 <input name="groom" ngModel required #groom="ngModel" type="text" class="form-control">
+
             </div>
 
             <button class="button-style">Valider</button>
@@ -20,13 +25,16 @@
 
         <h1 class="text-center">Planning</h1>
 
-        <form #e="ngForm" (ngSubmit)="onAdd(e)">
+        <form [formGroup]="eventForm" (ngSubmit)="addEvent()">
+
             <div class="form-group">
+
                 <label for="event">Ajouter un évènement</label>
-                <input type="text" class="form-control" name="event" ngModel #event="ngModel">
+                <input type="text" class="form-control" name="event" formControlName="title">
 
                 <label for="date">Saisir une date</label>
-                <input type="date" class="form-control" name="date" ngModel #date="ngModel">
+                <input type="date" class="form-control" name="date" formControlName="date">
+
             </div>
 
             <button type="submit" class="button-style">Ajouter</button>
@@ -35,8 +43,9 @@
         <h1 class="text-center">Déroulé des événements</h1>
 
         <div id="eventList">
-                
+
         </div>
 
     </div>
+
 </div>

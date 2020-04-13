@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormArray } from '@angular/forms';
+import { FormsModule, FormGroup, FormControl, Validators, ReactiveFormsModule, FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-calendar',
@@ -9,30 +11,31 @@ import { NgForm } from '@angular/forms';
 
 export class CalendarComponent implements OnInit {
 
-onSubmit(f: NgForm) {
+  eventForm: FormGroup;
+
+  onSubmit(f: NgForm) {
     console.log(f.value);
   }
 
-  event = {
-    name: String,
-    date: Date
-  };
-
-  events: any [];
-
- 
-  constructor() { 
-  }
-
-  onAdd(e: NgForm) {
-    console.log(e.value);
-    document.getElementById('eventList').innerHTML += e.value;
+  constructor(private fb: FormBuilder) {
 
   }
 
   ngOnInit(): void {
+    this.eventForm = this.fb.group({
+      title: [],
+      date: []
+    });
+
   }
-    
- 
+
+  addEvent(){
+    const title = this.eventForm.get('title').value;
+    const date = this.eventForm.get('date').value;
+
+    document.getElementById('eventList').innerHTML += "Evénement : " + title + "<br>" + "Date : " + date + "<br>";
+  }
+
+
 }
 
