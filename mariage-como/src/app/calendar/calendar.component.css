@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
 
 h1{
     font-family: 'PT Sans', sans-serif;
@@ -12,8 +11,8 @@ p{
 }
 
 label{
-    color: #40384B !important;
-    font-family: 'Martel', serif;
+    color: #372F3B !important;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 input{
@@ -22,17 +21,17 @@ input{
 
 .button-style{
     background-color:#F3D4B2;
-    color: #40384B;
+    color: #372F3B;
     padding: 1rem;
     width: 10rem;
     border-radius: 2rem;
     border: 0;
-    font-family: 'Martel', serif;
+    font-family: 'Didact Gothic', sans-serif;
     margin-right: 1rem;
 }
 
 .button-style:hover{
-    background-color: #40384B;
+    background-color: #372F3B;
     color: #F3D4B2;
 }
 
@@ -42,7 +41,7 @@ input{
 }
 
 #calendar-hero-header{
-    background: url('../../assets/img/married.jpg');
+    background: url('../../assets/img/married2.jpg');
     background-size: cover;
     background-position: 10%;
     height: 100%;

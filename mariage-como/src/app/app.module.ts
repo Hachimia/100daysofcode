@@ -15,6 +15,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ArticlesComponent } from './articles/articles.component';
+import { ArticleItemComponent } from './article-item/article-item.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProvidersComponent,
     MessagesComponent,
     BlogComponent,
-    ProfileComponent
+    ProfileComponent,
+    ArticlesComponent,
+    ArticleItemComponent
   ],
   imports: [
     BrowserModule,

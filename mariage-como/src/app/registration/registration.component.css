@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 
 
 
@@ -16,12 +18,12 @@ input{
 
 label{
     color: #F3D4B2 !important;
-    text-shadow: 1px 1px 2px  #40384B !important;
-    font-family: 'Alegreya', serif;
+    text-shadow: 1px 1px 2px  #372F3B !important;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 a{
-    color: #40384B;
+    color: #372F3B;
 }
 
 a:hover{
@@ -31,16 +33,16 @@ a:hover{
 
 .button-style{
     background-color:#F3D4B2;
-    color: #40384B;
+    color: #372F3B;
     padding: 1rem;
     width: 10rem;
     border-radius: 2rem;
     border: 0;
-    font-family: 'Alegreya', serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .button-style:hover{
-    background-color: #40384B;
+    background-color: #372F3B;
     color: #F3D4B2;
 }
 
