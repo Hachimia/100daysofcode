@@ -1,15 +1,15 @@
 <div class="main">
 <div class="container">
   <h1 class="text-center">Connexion</h1>
-  <form>
+  <form [formGroup]="loginForm">
     <div class="form-group">
       <label for="email">E-mail</label>
-      <input class="form-control" type="email">
+      <input class="form-control" type="email" formControlName="email">
     </div>
 
     <div class="form-group">
       <label for="password">Mot de passe</label>
-      <input class="form-control" type="password">
+      <input class="form-control" type="password" formControlName="password">
     </div>
 
     <button class="btn button-style"><a href="dashboard">Connexion</a></button>
