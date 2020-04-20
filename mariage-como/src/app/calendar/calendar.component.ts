@@ -36,6 +36,5 @@ export class CalendarComponent implements OnInit {
     document.getElementById('eventList').innerHTML += "Evénement : " + title + "<br>" + "Date : " + date + "<br>";
   }
 
-
 }
 

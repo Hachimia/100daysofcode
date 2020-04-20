@@ -31,8 +31,9 @@ import { ArticleItemComponent } from './article-item/article-item.component';
     BlogComponent,
     ProfileComponent,
     ArticlesComponent,
-    ArticleItemComponent
+    ArticleItemComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
