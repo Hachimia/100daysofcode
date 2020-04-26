@@ -1,0 +1,18 @@
+<div class="col-md-12">
+    <h1 class="text-center">Ajouter un événement</h1>
+
+    <form [formGroup]="eventForm">
+
+        <div class="form-group">
+
+            <label for="event">Intitulé de l'événement</label>
+            <input type="text" class="form-control" name="event" formControlName="title">
+
+            <label for="date">Saisir une date</label>
+            <input type="date" class="form-control" name="date" formControlName="date">
+
+        </div>
+
+        <button type="submit" class="button-style">Ajouter</button>
+    </form>
+</div>

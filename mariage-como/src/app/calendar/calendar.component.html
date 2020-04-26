@@ -2,13 +2,14 @@
 
 
     <div class="container-fluid" id="calendar-hero-header" class="img-fluid">
-        <p class="text-center" id="hero-header-legend">Organisation du mariage de {{ bride.value }} et {{groom.value}} </p>
+        <p class="text-center" id="hero-header-legend">Organisation du mariage de {{ bride.value }} et {{groom.value}}
+        </p>
     </div>
 
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h1 class="text-center">Les mariés</h1>
                 <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
 
@@ -29,36 +30,15 @@
                     <button class="button-style">Valider</button>
                 </form>
             </div>
-
-            <div class="col-md-6">
-                <h1 class="text-center">Ajouter un événement</h1>
-
-                <form [formGroup]="eventForm">
-
-                    <div class="form-group">
-
-                        <label for="event">Intitulé de l'événement</label>
-                        <input type="text" class="form-control" name="event" formControlName="title">
-
-                        <label for="date">Saisir une date</label>
-                        <input type="date" class="form-control" name="date" formControlName="date">
-
-                    </div>
-
-                    <button type="submit" class="button-style">Ajouter</button>
-                </form>
-            </div>
         </div>
+
+        <app-event-form></app-event-form>
 
         <h1 class="text-center">Déroulé des événements</h1>
 
-        <div id="eventList" *ngFor="let event of event">
-            <div id="event-item">
-                <p>Evénement prévu : {{ event.title }} </p>
-                <p>Date : {{ event.date | date :'fullDate'}} </p>
-                <button class="btn btn-success mt-3 mr-4">Effectué<fa-icon [icon]="faCheck"></fa-icon></button>
-                <button class="btn btn-danger mt-3">Supprimer cet événement<fa-icon [icon]="faTrashAlt"></fa-icon></button>
-            </div>
+        <div id="eventList">
+            <app-event-item
+            *ngFor="let event of events"></app-event-item>
         </div>
 
     </div>

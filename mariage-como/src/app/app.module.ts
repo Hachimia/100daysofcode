@@ -17,6 +17,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleItemComponent } from './article-item/article-item.component';
+import { EventItemComponent } from './event-item/event-item.component';
+import { EventFormComponent } from './event-form/event-form.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { ArticleItemComponent } from './article-item/article-item.component';
     ProfileComponent,
     ArticlesComponent,
     ArticleItemComponent,
+    EventItemComponent,
+    EventFormComponent,
   ],
   
   imports: [

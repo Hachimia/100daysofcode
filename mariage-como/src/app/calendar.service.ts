@@ -5,7 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class CalendarService {
 
-  events = [];
+  events = [{
+    title: 'Henné',
+    date: '2020-06-02'
+    },
+    {
+    title: 'Mariage civil',
+    date: '2020-05-10'
+    },
+    {
+    title: 'Oukoumbi',
+    date: '2020-07-10'
+    }];
 
   //Add an event at calendar
   addToCalendar(event){
@@ -18,8 +29,12 @@ export class CalendarService {
   }
 
   //Deleting the last event entered
-  deleteOfCalendar(){
-    this.events.pop();
+  deleteOfCalendar(event){
+    for(let i = 0; i<= this.events.length; i++ ){
+      if(event == this.events[i]){
+        this.events.splice(i,1)
+      }
+    }
   }
 
   constructor() { }
