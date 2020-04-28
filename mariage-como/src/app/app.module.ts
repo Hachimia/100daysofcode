@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +19,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleItemComponent } from './article-item/article-item.component';
-import { EventItemComponent } from './event-item/event-item.component';
 import { EventFormComponent } from './event-form/event-form.component';
 
 @NgModule({
@@ -34,7 +35,6 @@ import { EventFormComponent } from './event-form/event-form.component';
     ProfileComponent,
     ArticlesComponent,
     ArticleItemComponent,
-    EventItemComponent,
     EventFormComponent,
   ],
   

@@ -24,16 +24,13 @@ export class EventFormComponent implements OnInit {
   }
 
   addEvent(){
-    this.calendarService.events.push();
-    console.log(this.calendarService.events);
+    /*const title = this.eventForm.get('title').value;
+    const date = this.eventForm.get('date').value;
+    console.log(title + date );*/
+    this.calendarService.addToCalendar(Event);
   }
 
-  /*addEvent(){
-    const title = this.eventForm.get('title').value;
-    const date = this.eventForm.get('date').value;
-
-    document.getElementById('eventList').innerHTML += "Evénement : " + title + "<br>" + "Date : " + date + "<br>";
-  }*/
+  
 
 
 }

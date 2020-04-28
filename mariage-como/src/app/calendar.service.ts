@@ -1,26 +1,18 @@
 import { Injectable } from '@angular/core';
+import { events } from './events';
+import { Event } from './event';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CalendarService {
 
-  events = [{
-    title: 'Henné',
-    date: '2020-06-02'
-    },
-    {
-    title: 'Mariage civil',
-    date: '2020-05-10'
-    },
-    {
-    title: 'Oukoumbi',
-    date: '2020-07-10'
-    }];
+  events = events;
+  Event = Event;
 
   //Add an event at calendar
-  addToCalendar(event){
-    this.events.push(event);
+  addToCalendar(Event){
+    this.events.push(Event);
   }
 
   //Return events of array

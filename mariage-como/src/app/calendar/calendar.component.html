@@ -36,9 +36,14 @@
 
         <h1 class="text-center">Déroulé des événements</h1>
 
-        <div id="eventList">
-            <app-event-item
-            *ngFor="let event of events"></app-event-item>
+        <div id="eventList" *ngFor="let event of events">
+            <div id="event-item">
+                <p>Evénement prévu : {{ event.title }}</p>
+                <p>Date : {{ event.date | date : 'fullDate' }}  </p>
+                <button class="btn btn-success mt-3 mr-4">Effectué<fa-icon [icon]="faCheck"></fa-icon></button>
+                <button class="btn btn-danger mt-3">Supprimer cet événement<fa-icon [icon]="faTrashAlt"></fa-icon>
+                    </button>
+            </div>
         </div>
 
     </div>
