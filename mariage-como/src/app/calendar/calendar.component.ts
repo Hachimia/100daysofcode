@@ -34,7 +34,16 @@ events = this.calendarService.events;
   eventStyle: string;
 
   pastEvent(){
+    this.calendarService.eventPerformed();
     console.log('Effectué ! ');
+  }
+
+  deleteEvent(){
+    /*const title = this.eventForm.get('title').value;
+    const date = this.eventForm.get('date').value;
+    console.log(title + date );*/
+    confirm('Vous êtes sûr(e) de supprimer cet événement ? ')
+    this.calendarService.deleteOfCalendar(Event);
   }
 
 }

@@ -20,10 +20,18 @@ export class CalendarService {
     return this.events;
   }
 
+  //Validate event 
+  eventPerformed(){
+        var eventItem = document.getElementById('event-item');
+        eventItem.style.backgroundColor += '#28A745';
+        eventItem.style.textDecoration += 'line-through';
+      }
+  
+
   //Deleting the last event entered
-  deleteOfCalendar(event){
+  deleteOfCalendar(Event){
     for(let i = 0; i<= this.events.length; i++ ){
-      if(event == this.events[i]){
+      if(Event == this.events[i]){
         this.events.splice(i,1)
       }
     }

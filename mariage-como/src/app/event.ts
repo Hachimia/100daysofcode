@@ -1,4 +1,4 @@
-export class Event{
-    title: string
-    date: Date
+export interface Event{
+    title: string;
+    date: Date;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import  { FormGroup, FormBuilder } from '@angular/forms';
 import {CalendarService} from '../calendar.service';
+import {Event} from '../event';
 
 @Component({
   selector: 'app-event-form',
@@ -9,28 +10,31 @@ import {CalendarService} from '../calendar.service';
 })
 export class EventFormComponent implements OnInit {
 
+  Event = Event;
   events = this.calendarService.events;
-  eventForm: FormGroup;
+  eventForm;
+
 
   constructor(private fb: FormBuilder, private calendarService: CalendarService) {
+    this.eventForm = this.fb.group({
+      title: '',
+      date:''
+    })
 
+    const title = this.eventForm.get('title').value
+    const date = this.eventForm.get('date').value
   }
 
   ngOnInit(): void {
-    this.eventForm = this.fb.group({
-      title : [],
-      date: []
-    });
+
   }
 
   addEvent(){
-    /*const title = this.eventForm.get('title').value;
-    const date = this.eventForm.get('date').value;
-    console.log(title + date );*/
-    this.calendarService.addToCalendar(Event);
+    const title = this.eventForm.get('title').value
+    const date = this.eventForm.get('date').value
+
+    this.calendarService.addToCalendar(this.Event);
+
+    }
+
   }
-
-  
-
-
-}
