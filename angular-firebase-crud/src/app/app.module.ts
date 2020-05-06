@@ -8,6 +8,10 @@ import { OrderListComponent } from './order-list/order-list.component';
 import {OrdersService} from './shared/orders.service';
 import { ReactiveFormsModule } from "@angular/forms";
 
+import { environment } from "src/environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,10 @@ import { ReactiveFormsModule } from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [OrdersService],
   bootstrap: [AppComponent]
