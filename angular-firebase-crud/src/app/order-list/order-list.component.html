@@ -1,41 +1,26 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">1</th>
-        <th scope="col">2</th>
-        <th scope="col">3</th>
+        <th scope="col">Order number</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Order title</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td></td>
-        <td></td>
-        <td></td>
+      <tr *ngFor="let order of coffeeOrders">
+        <td>{{ order.payload.doc.data().orderNumber }}</td>
+        <td>{{ order.payload.doc.data().customerName }}</td>
+        <td>
+          <span *ngFor="let coffee of order.payload.doc.data().coffeeOrder">
+            {{ coffee }}
+          </span>
+      </td>
+      <td [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)">
+        <i class="material-icons text-success">check</i>
+      </td>
+      <td [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)">
+        <i class="material-icons text-danger">delete_forever</i>
+      </td>
       </tr>
     </tbody>
   </table>

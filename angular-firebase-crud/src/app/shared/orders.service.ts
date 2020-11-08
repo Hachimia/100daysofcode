@@ -24,5 +24,17 @@ export class OrdersService {
           .then(res => {}, err => reject (err));
     })
   }
+
+  getCoffeeOrders(){
+    return this.firestore.collection("coffeeOrders").snapshotChanges();
+  }
+
+  updateCoffeeOrder(data){
+    return this.firestore.collection("coffeeOrders").doc(data.payload.doc.id).set({completed: true}, {merge: true})
+  }
+
+  deleteCoffeeOrder(data){
+    return this.firestore.collection("coffeeOrders").doc(data.payload.doc.id).delete();
+  }
   
 }

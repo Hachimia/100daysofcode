@@ -1,24 +1,24 @@
 <div class="container">
-<form [formGroup]="form" class="mt-4">
-    <div class="form-group">
-        <input placeholder="Order Number" formControlName="orderNumber" type="text" class="form-control">
-    </div>
+    <h1 class="text-center">Coffee's orders app</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="mt-4">
+        <div class="form-group">
+            <input placeholder="Order Number" formControlName="orderNumber" type="text" class="form-control">
+        </div>
 
-    <div class="form-group">
-        <input placeholder="Customer Name" formControlName="customerName" type="text" class="form-control">
-    </div>
+        <div class="form-group">
+            <input placeholder="Customer Name" formControlName="customerName" type="text" class="form-control">
+        </div>
 
-    <button class="btn btn-primary mt-2 mr-2" *ngFor="let coffee of coffees" (click)=addCoffee(coffee)>
-        {{ coffee }}
-    </button>
+        <button class="btn btn-primary btn-coffee mt-2 mr-2" *ngFor="let coffee of coffees" (click)=addCoffee(coffee)>
+            {{ coffee }}
+        </button>
 
-    <ul class="collection">
-        <li *ngFor="let coffee of coffeeOrder">
-            <span>{{ coffee }}</span>
-            <a (click)="removeCoffee(coffee)">X</a>
-        </li>
-    </ul>
-
-    <button class="btn btn-success">Submit</button>
-</form>
+        <ul class="collection mt-4">
+            <h1 class="text-center">List of commands</h1>
+            <li *ngFor="let coffee of coffeeOrder">
+                <span>{{ coffee }}</span>
+                <a (click)="removeCoffee(coffee)">[ X ]</a>
+            </li>
+        </ul>
+    </form>
 </div>

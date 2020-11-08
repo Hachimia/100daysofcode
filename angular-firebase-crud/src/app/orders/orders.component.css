@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
+
+h1{
+    font-family: 'Cookie', cursive;
+    color: #612914;
+}
+
+.btn-coffee{
+    border-radius: 30px;
+    background: linear-gradient(127deg, #612914, #f5a182);
+    padding: 10px;
+    border: 0;
+}
+
+.btn-coffee:hover{
+    background: white;
+    color: #612914;
+    border: 1px solid #612914;
+}
+
+.btn-rounded{
+    border-radius: 25px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
